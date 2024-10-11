@@ -1,0 +1,45 @@
+body{
+    background-image: url('/images/lib.jpg');
+    background-size: cover;
+}
+
+section#desc{
+    background-color: #070707e7;
+    opacity: 90%;
+    height: 100vh;
+}
+section#desc div.container{
+    padding: 30px;
+    border-radius: 30px;
+}
+section#desc div.content {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 30px;
+    height: 300px;
+}
+section#desc div.content h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+section#desc div.content p{
+    font-size: 16px;
+}
+section#desc div.content button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: aqua;
+    border-radius: 20px;
+    color: white;
+    font-weight: 900;
+    border: none;
+}
+section#desc div img{
+    height: 300px;
+    border-radius: 20px;
+}

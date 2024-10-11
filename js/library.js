@@ -115,6 +115,7 @@ function searchBook(title){
 }
 console.log(searchBook('Half of a Yellow Sun'));
 console.log(searchBook('The Carnivorous City'));
+console.log(searchBook('The Carnivorous'));
 
 
 // Borrow a book:
@@ -144,11 +145,14 @@ console.log(borrowBook('Every Day Is for the Thief'));
 
 function listAvailableBooks() {
     let availableBooks = books.filter(book => book.isAvailable);
+    let foundBook = '';
     if (availableBooks.length > 0) {
-        console.log(`\nList of Available Books:`);
-        return availableBooks.map(book => `Title: ${book.bookName}, Author: ${book.author}`).join("\n");
+        availableBooks.forEach((m)=>{
+           foundBook += `<ul>
+            <li>Title: ${m.bookName} |  Author: ${m.author} </li>
+            </ul>`;
+            
+        })
+        document.getElementById('display-book').innerHTML = foundBook;
     }
-    
-    return "No books are currently available.";
 }
-console.log(listAvailableBooks());
